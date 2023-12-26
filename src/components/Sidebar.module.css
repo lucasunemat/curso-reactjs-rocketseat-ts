@@ -1,0 +1,71 @@
+.sidebar {
+    background: --var(gray-800);
+    border-radius: 8px;
+    overflow: hidden;
+    /*serve para que todo excesso de imagem seja escondido, e ela ocupe a forma arredondada do sidebar*/
+}
+
+.cover {
+    width: 100%;
+    /*imagem aparecer inteira*/
+    height: 72px;
+    object-fit: cover;
+    /*serve para que a imagem ocupe todo o espaço do elemento que agora tem tamanho fixo*/
+    /*mostra centro da imagem cortando partes*/
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: calc(0px - 1.5rem - 6px);
+    /*elevar perfil para cima da imagem*/
+}
+
+.profile strong {
+    margin-top: 1rem;
+    color: var(--gray-100);
+    line-height: 1.6;
+    /*espaço entre linhas*/
+}
+
+.profile span {
+    font-size: 0.875rem;
+    /*14px*/
+    color: var(--gray-400);
+    line-height: 1.6;
+}
+
+.sidebar footer {
+    border-top: 1px solid var(--gray-600);
+    margin-top: 1.5rem;
+    padding: 1.5rem 2rem 2rem;
+    /*1.5rem acima, 2rem nas laterais, 2rem abaixo*/
+}
+
+.sidebar footer a {
+    background: transparent;
+    color: var(--green-500);
+    border: 1px solid var(--green-500);
+    border-radius: 8px;
+    height: 50px;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    display: block;
+    /*dá o mesmo efeito que width 100%*/
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem; /* 12 px */
+
+    transition: color 0.1s, background 0.1s;
+}
+
+.sidebar footer a:hover {
+    background: var(--green-500);
+    color: var(--white);
+}

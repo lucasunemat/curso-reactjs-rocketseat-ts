@@ -1,0 +1,17 @@
+.avatarWithBorder {
+    width: calc(3rem + 12px);
+    /*4px de um lado, mais 4 de outro, mais 2 e mais 2 = 12px*/
+    /*Tipo, se você contar 4 * 4 + 2 * 2 = 24px totais. Coloca 12 pra width e 12 para height*/
+    height: calc(3rem + 12px);
+    border-radius: 8px;
+    border: 4px solid var(--gray-600);
+    /*borda branca*/
+    outline: 2px solid var(--green-500);
+    /*outline é a borda externa*/
+}
+
+.avatar {
+    width: calc(3rem);
+    height: calc(3rem);
+    border-radius: 8px;
+}
